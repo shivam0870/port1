@@ -1,17 +1,27 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
-body.dark {
-   
-}
+
 :root {
 
-    --bg-black-900 : #f2f2fc;
+     /* --bg-black-900 : #f2f2fc;
     --bg-black-100 : #fdf9ff;
     --bg-black-50 : #e8dfec;
     --text-black-900 : #302e4d;
     --text-black-700 : #504e70;
-    --skin-color: #ec1839;
+    --skin-color: #ec1839; 
+      */
+    
+
+
+
+ 
+     --bg-black-900 : #030307;
+    --bg-black-100 :#0c0c36 ;
+    --bg-black-50 : #ff0000;
+    --text-black-900 : #75729e;
+    --text-black-700 : #ffffff;
+    --skin-color: #ec1839; 
 }
 
 body.dark {
@@ -277,7 +287,7 @@ h3.my-profession {
     height: 80px;
     width: 80px;
     right: 74px; /* one change was made here*/
-    bottom: 32px;
+    bottom: -19px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
 }
@@ -365,7 +375,8 @@ h3.my-profession {
  .about .about-content .about-text p {
      font-size: 16px;
      line-height: 25px;
-     color: var(--bg-black-700);
+     /* color: var(--bg-black-700); */
+     color: #e8dfec;
  }
 
  .about .about-content .personal-info {
@@ -748,7 +759,7 @@ margin-bottom: 40px;
     }
 }
 
-@media(max-width : 1050px){
+ @media(max-width : 1050px){
    
 
     .contact .contact-info-item {
@@ -796,6 +807,10 @@ margin-bottom: 40px;
 
 
 @media (max-width:942px){
+    #myimg{
+        border: 4px dotted var(--skin-color);
+        padding: 1rem;
+    }
     .home-img::before {
         content: '';
         position: absolute;
@@ -803,8 +818,10 @@ margin-bottom: 40px;
         width: 80px;
         left: 28px;
         top: 19px;
-        border-top: 10px solid var(--skin-color);
-        border-left: 10px solid var(--skin-color);
+        /* border-top: 10px solid var(--skin-color); */
+        /* border-left: 10px solid var(--skin-color); */    
+        border-top: none;
+        border-left: none;
     }
     .home-img::after {
         content: '';
@@ -815,7 +832,58 @@ margin-bottom: 40px;
         bottom: -14px;
         /* border-top: 10px solid var(--skin-color);
         border-left: 10px solid var(--skin-color); */
+        border-right: none;
+        border-bottom: none;
     }
 }
 
 
+/* This Css code is for making the webiste in the dark mode  */
+
+@media (max-width : 1053px){
+    .aside {
+        left: -270px;
+    }
+    .main-content {
+        padding-left: 0;
+    }
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media (max-width : 900px){
+    .service .service-item {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .portfolio .portfolio-item {
+        flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .contact .contact-info-item {
+        flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .about .about-content .experience,
+    .about .about-content .education {
+        flex:  0 0 100%;
+        max-width: 100%;
+    }
+
+     
+}
+
+@media (max-width : 916px){
+     .about .about-content .skills,
+    .about .about-content .personal-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+ .personal-info .github {
+     color: rgb(245, 141, 141);
+ }
+/* Hamburger option css starts from here  */
